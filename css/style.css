@@ -440,6 +440,7 @@ img{
 }
 
 .footer-link {
+    display: block;
     width: 100%;
     height: 100%;
     background-color: var(---hover-icon_color);
@@ -741,7 +742,7 @@ background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: backgroud-color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -751,7 +752,7 @@ background: #fff;
 }
 
 .portfolio-footer-link:is(:hover, :focus) {
-    background-color: #31D0AA;
+    background-color: #31d0aa;
 }
 
 
