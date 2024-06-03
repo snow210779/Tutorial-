@@ -769,7 +769,6 @@ background: #fff;
 
 .section {
     margin-bottom: 20px;
-    position: relative;
 }
 
 .title {
@@ -792,6 +791,33 @@ background: #fff;
 .section:nth-child(3) .title {
     background-color: #48d624;
 }
+
+.section:nth-child(4) .title {
+    background-color: #340449;
+    color: #f9f7f7;
+}
+
+.radio {
+    padding: 16px;
+    border: 1px solid darkblue;
+    max-width: 300px;
+}
+
+.title-radio {
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+
+
+.test-radio {
+    padding-top: 10px;
+    
+}
+
+
+
+
 
 .test-form {
     display: flex;

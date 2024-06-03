@@ -51,6 +51,10 @@
                   </div>
 </section>
 
+<section class="section">
+     <div class="container"> <h2 class="title">third</h2></div>
+</section>
+
 <form action="">
              <label class="test-form">name
                   <input type="text" name="name" placeholder="Tom">
@@ -65,13 +69,33 @@
             </label>
 
             <label class="test-form">Password
-                  <input type="password" name="password" minlength="5" maxlength="15">
+                  <input type="password" name="pwd" minlength="5" maxlength="15">
+            </label>
+
+            <label class="test-form">Number form
+                  <input type="number" name="number-form" step="0.1" min="0" max="20" value="0">
+            </label>
+
+            <label class="test-form">Time Data
+                  <input type="datetime-local">
             </label>
 
             <label class="test-form">Feedback
                   <textarea name="feedback" rows="5" placeholder="Enter your message here...">
                   </textarea>
             </label>
+</form>
+
+<form class="radio">
+      <p class="title-radio">Choose color</p>
+     <label class="test-radio">red <input type="radio" name="color" value="red" checked></label>
+      <label class="test-radio">blue<input type="radio" name="color" value="blue"></label>
+      <label class="test-radio">yellow<input type="radio" name="color" value="yellow"></label>
+      
+      <p class="title-radio">Choose size</p>
+      <label class="test-radio">small<input type="radio" name="size" value="small"></label>
+     <label class="test-radio">medium<input type="radio" name="size" value="medium"></label>
+     <label class="test-radio">large<input type="radio" name="size" value="large" checked></label>
 </form>
      
 </body>
