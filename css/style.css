@@ -35,9 +35,17 @@ img{
     display: block;
 }
 
+input,textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 
 /**------HEADER------------*/
-
+.header {
+    position: sticky;
+    top: 0;
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -754,6 +762,58 @@ background: #fff;
 .portfolio-footer-link:is(:hover, :focus) {
     background-color: #31d0aa;
 }
+
+
+
+/**-------TEST-----------*/
+
+.section {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    color: #2e2f42;
+    background-color: #f4f4fd;
+    position: sticky;
+    top: 0;
+}
+
+
+.section:nth-child(1) .title {
+    background-color: #4d5ae5;
+}
+
+.section:nth-child(2) .title {
+    background-color: #474960;
+}
+
+.section:nth-child(3) .title {
+    background-color: #48d624;
+}
+
+.test-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
