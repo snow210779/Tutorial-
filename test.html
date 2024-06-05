@@ -59,23 +59,29 @@
 
        <h2 class="form-title">Leave your contacts and we will call you back</h2>
 
-             <label class="test-form">name
-                  <input class="form-input" type="text" name="name" placeholder="Tom">
+             <label class="test-form">Name
+                  <input class="form-input" type="text" name="name">
+                  <!--
+                        <svg class="form-icon" width="18" height="18">
+                              <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                  -->
             </label>
 
-            <label class="test-form">E-mail
+            <label class="test-form">Email
                   <input class="form-input" type="email" name="email">   
             </label>
 
-            <label class="test-form">Phone number
+            <label class="test-form">Phone 
                   <input class="form-input" type="tel" name="phone">   
             </label>
 
+            <!--
             <label class="test-form">Password
                   <input class="form-input" type="password" name="pwd" minlength="5" maxlength="15">
             </label>
 
-            <!--
+            
                   <label class="test-form">Number form
                         <input class="form-input" type="number" name="number-form" step="0.1" min="0" max="20" value="0">
                   </label>
@@ -84,87 +90,89 @@
                   <input class="form-input" type="datetime-local">
             </label>-->
 
-            <label class="test-form">Feedback
+            <label class="test-form">Comment
                   <textarea class="form-feedback" name="feedback" rows="5" placeholder="Enter your message here...">
                   </textarea>
             </label>
 
-            <p>I accept the terms and conditions of the Privacy Policy</p>
+            <p class="text-form">I accept the terms and conditions of the <span class="text-form-accent">Privacy Policy</span></p>
 
             <button class="form-btn" type="submit">Send</button>
 </form>
 
-<form class="radio">
-      <p class="title-radio">Choose color</p>
-     <label class="test-radio">red 
-      <input type="radio" name="color" value="red" checked>
-</label>
-      <label class="test-radio">blue
-            <input type="radio" name="color" value="blue">
+<!--
+      <form class="radio">
+            <p class="title-radio">Choose color</p>
+           <label class="test-radio">red 
+            <input type="radio" name="color" value="red" checked>
       </label>
-      <label class="test-radio">yellow
-            <input type="radio" name="color" value="yellow">
+            <label class="test-radio">blue
+                  <input type="radio" name="color" value="blue">
+            </label>
+            <label class="test-radio">yellow
+                  <input type="radio" name="color" value="yellow">
+            </label>
+            
+            <p class="title-radio">Choose size</p>
+            <label class="test-radio">small
+                  <input type="radio" name="size" value="small">
+            </label>
+           <label class="test-radio">medium
+            <input type="radio" name="size" value="medium">
       </label>
+           <label class="test-radio">large
+            <input type="radio" name="size" value="large" checked>
+      </label>
+      </form>
       
-      <p class="title-radio">Choose size</p>
-      <label class="test-radio">small
-            <input type="radio" name="size" value="small">
-      </label>
-     <label class="test-radio">medium
-      <input type="radio" name="size" value="medium">
-</label>
-     <label class="test-radio">large
-      <input type="radio" name="size" value="large" checked>
-</label>
-</form>
-
-<table class="table-test">
-
-      <caption>Table test</caption>
-      <thead>
-            <tr>
-                  <th class="th" scope="row" rowspan="2">Food categories</th>
-                  <th class="th" scope="row">For 1 person for a month</th>
-            </tr>
-
+      <table class="table-test">
+      
+            <caption>Table test</caption>
+            <thead>
                   <tr>
-                        
-                        <th class="th" scope="row">Quantity in kg</th>
-                        <th class="th" scope="row">Price</th>
+                        <th class="th" scope="row" rowspan="2">Food categories</th>
+                        <th class="th" scope="row">For 1 person for a month</th>
                   </tr>
+      
+                        <tr>
+                              
+                              <th class="th" scope="row">Quantity in kg</th>
+                              <th class="th" scope="row">Price</th>
+                        </tr>
+                 
+            </thead>
+      
+            <tbody>
+                  <tr>
+                        <td class="td">Groceries</td>
+                        <td class="td">10,1</td>
+                        <td class="td">268</td>
+                  </tr>
+            
+                  <tr>
+                        <td class="td">Groceries</td>
+                        <td class="td">10,1</td>
+                        <td class="td">268</td>
+                  </tr>
+            
+                  <tr>
+                        <td class="td">Groceries</td>
+                        <td class="td">10,1</td>
+                        <td class="td">268</td>
+                  </tr>
+            </tbody>
+      
+            <tfoot>
+                  <tr>
+                        <th class="th" colspan="2" scope="row">Total</th>
+                        
+                        <td class="td">32</td>
+                  </tr>
+            </tfoot>
+      
+      </table>
            
-      </thead>
-
-      <tbody>
-            <tr>
-                  <td class="td">Groceries</td>
-                  <td class="td">10,1</td>
-                  <td class="td">268</td>
-            </tr>
-      
-            <tr>
-                  <td class="td">Groceries</td>
-                  <td class="td">10,1</td>
-                  <td class="td">268</td>
-            </tr>
-      
-            <tr>
-                  <td class="td">Groceries</td>
-                  <td class="td">10,1</td>
-                  <td class="td">268</td>
-            </tr>
-      </tbody>
-
-      <tfoot>
-            <tr>
-                  <th class="th" colspan="2" scope="row">Total</th>
-                  
-                  <td class="td">32</td>
-            </tr>
-      </tfoot>
-
-</table>
-     
+<-->
 </body>
 
 </html>

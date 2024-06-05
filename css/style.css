@@ -818,7 +818,7 @@ background: #fff;
 }
 
 .form {
-    background-color: #8e8f99;
+    background-color:  #fcfcfc;
     border-radius: 4px;
     width: 408px;
     height: 584px;   
@@ -829,6 +829,11 @@ background: #fff;
     flex-direction: column;
     margin-bottom: 18px;
     width: 360px;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #8e8f99;
     
 }
 
@@ -843,11 +848,29 @@ color: #2e2f42;
 }
 
 .form-input {
+    display: inline-block;
     height: 40px;
+    content: url(../images/icons.svg#icon-name);
+    
 }
+
 
 .form-feedback {
     height: 120px;
+}
+
+.text-form {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;    
+}
+
+.text-form-accent {
+    line-height: 1.3;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
 }
 
 .form-btn {
