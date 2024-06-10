@@ -770,8 +770,8 @@ background: #fff;
     top: 0;
     left: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
 }
-
 
 
 .modal {
@@ -790,8 +790,84 @@ background: #fff;
 .modal-btn-close {
     width: 24px;
     height: 24px;
+    border-radius: 50%;
+    background-color:  #e7e9fc;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-btn-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+.modal-btn-close:is(:hover, :focus)
+{
+    fill: white;
+    background-color: var(---hover-icon_color);
+    border: none;
+}
+
+
+
+.btn-open {
+    display: block;
+    background-color: yellowgreen;
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
+
+.window-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b2b5d7;
+    
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.window-form {
+    background-color: #fff;
+    width: 430px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.window-text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-close {
+    display: block;
+    background-color: #8E8F99;
+    border: 1px dashed yellow;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-25%, -50%) scale(1.75);
+}
 
 
 
