@@ -773,6 +773,12 @@ background: #fff;
     
 }
 
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 .modal {
     border-radius: 4px;
@@ -817,57 +823,61 @@ background: #fff;
 
 
 
-.btn-open {
-    display: block;
-    background-color: yellowgreen;
-    border: 2px solid blueviolet;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-20%, -20%);
-}
 
-.window-backdrop {
+
+/**------modal-test----------*/
+
+.btn-open {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #b2b5d7;
     
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+.modal-test {
+    background-color: #e7e9fc;
+    transition: background-color 250ms ease-out;
+    width: 100%;
+    height: 100%;
 }
 
-.window-form {
-    background-color: #fff;
-    width: 430px;
-    height: 580px;
+
+.modal-window-test {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    height: 300px;
+    width: 250px;
+    border: 1px solid darkgray;
+    background-color: #8e8f99;
+    transition: background-color 250ms ease-out, transform 250ms ease-out;
 }
 
-.window-text {
-    text-align: center;
-    padding-top: 20px;
+.modal-window-test:hover {
+    background-color: #4d5ae5;
+    border-color: yellow;
+   
 }
 
 .btn-close {
-    display: block;
-    background-color: #8E8F99;
-    border: 1px dashed yellow;
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-25%, -50%) scale(1.75);
+    top: 24px;
+    right: 24px;
+    color: #000;
+   transition:  transform 250ms ease-out;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
 }
+
+.btn-close:hover {
+    transform: scale(3);
+    
+
+}
+
 
 
 
