@@ -760,6 +760,11 @@ background: #fff;
     background-color: #31d0aa;
 }
 
+
+
+
+
+
 /**----BACKDROP------*/
 
 .backdrop {
@@ -859,6 +864,7 @@ background: #fff;
 }
 
 .modal-icon-box {
+    
     position: absolute;
     left: 16px;
     top: 50%;
@@ -866,27 +872,34 @@ background: #fff;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-form-input:is(:hover, :focus) {
+.order-form-input:is(:hover, :focus)  {
     border: 1px solid var(---hover-icon_color);
+    
     
 }
 
-.test-modal {
+.modal-icon-box:is(:hover, :focus) {
+     fill: var(---hover-icon_color);
+}
+
+.modal-icon-contant {
     position: relative;
 }
-.test-modal::after {
-    display: inline-block;
+.modal-icon-contant::after {
+    visibility: hidden;
     position: absolute;
     content: "";
     background-color:  #2e2f42;
     width: 1.25px;
     height: 18px;    
-   right: -4px;
+    right: -4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- 
-    
-
+.modal-icon-contant:is(:hover, focus):after {
+    background-color: var(---hover-icon_color);
+    visibility: visible;
+}
 
 .order-form-textarea {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -899,6 +912,12 @@ background: #fff;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);    
     padding: 12px 0 0 16px;
+    resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-textarea:is(:hover, :focus) {
+    border: 1px solid var(---hover-icon_color);
 }
 
 .form-checkbox {
