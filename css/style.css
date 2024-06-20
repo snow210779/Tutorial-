@@ -57,7 +57,7 @@ input,textarea {
 }
 
 
-@media (max-width: 428px) {
+@media (max-width: 427px) {
 
     .header-container {
         min-height: 70px;
@@ -71,17 +71,10 @@ input,textarea {
         display: none;
     }
 
-}
-
-@media (min-width: 428px) and (max-width: 1158px) {
-
-    .header-container {
-        min-height: 72px;
+    .header-logo {
+        margin-right: 249px;
     }
 
-    .header-menu-btn {
-        display: none;;
-    }
 }
 
 .header-list {
@@ -97,7 +90,6 @@ input,textarea {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5; 
-    margin-right: 76px;
 }
 
 .header-menu-btn {
@@ -106,6 +98,18 @@ input,textarea {
     justify-content: center;
     border: none;
     background-color: inherit;
+}
+
+@media (min-width: 428px) {
+
+    .header-menu-btn {
+        display: none;
+    }
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
 }
 
 
