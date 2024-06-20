@@ -25,12 +25,11 @@
 
        <div class="container header-container">
 
-        <a class="header-logo" href="">Web<span class="header-logo-accent">Studio</span></a>
-
-        <div class="header-menu">
+        
 
             <nav class="header-nav">
-                
+                <a class="header-logo" href="">Web<span class="header-logo-accent">Studio</span></a>
+
                     <ul class="header-list">
             
                        <li class="header-item current">
@@ -71,7 +70,14 @@
                         </li>
                     </ul>
                 </address> 
-        </div>
+
+                <button class="header-menu-btn">
+                    <svg class="header-menu-icon" width="32" height="22">
+                        <use href="./images/icons.svg#icon-menu-mobile"></use>
+                    </svg>
+                
+                </button>
+        
        </div>
 
     </header>
@@ -645,11 +651,14 @@
     <script src="./js/modal.js"></script>
 
 
-    
+    <div class="menu-container js-menu-container">
+        
+    </div>
 
 
 
     <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+
     <script defer src="./js/mobile-menu.js"></script>
    
 </body>
