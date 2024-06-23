@@ -11,6 +11,7 @@ body{
 
 .container{
 max-width: 1158px;
+min-width: 320px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
@@ -33,7 +34,7 @@ ul,ol{
 }
 img{
     display: block;
-    max-width: 100%;
+    
 }
 
 input,textarea {
@@ -326,6 +327,12 @@ input,textarea {
     padding-bottom: 120px;
 }
 
+@media (max-width: 428px) {
+    .function {
+        display: none;
+    }
+}
+
 .function-title {
     font-weight: 700;
     font-size: 36px;
@@ -430,6 +437,24 @@ input,textarea {
 
 .team-social-link:is(:hover, :focus) {
      background-color: #31D0AA;
+}
+
+@media (max-width: 428px) {
+    .team {
+        padding: 96px 0;
+    }
+
+    .team-list {
+        gap: 72px;
+        flex-direction: column;
+    }
+
+    .team-item {
+        margin: 0 auto;
+        width: calc( (100% - 216px) / 4 );
+    }
+
+
 }
 
 
